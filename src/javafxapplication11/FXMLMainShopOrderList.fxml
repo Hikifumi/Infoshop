@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="1280.0" style="-fx-background-color: ffbbbb;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="javafxapplication11.FXMLMainShopOrderListController">
+   <children>
+      <TableView layoutX="300.0" layoutY="75.0" prefHeight="400.0" prefWidth="696.0">
+        <columns>
+          <TableColumn minWidth="6.93328857421875" prefWidth="52.800018310546875" text="Number" />
+          <TableColumn prefWidth="314.933349609375" text="Name" />
+            <TableColumn minWidth="0.0" prefWidth="150.93341064453125" text="Type" />
+            <TableColumn prefWidth="55.46661376953125" text="Total" />
+            <TableColumn prefWidth="122.13336181640625" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

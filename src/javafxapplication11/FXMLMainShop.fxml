@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: FFBBBB;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication11.FXMLMainShopController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="720.0" prefWidth="1280.0">
+         <top>
+            <VBox prefHeight="175.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ExitButtonAction" text="Exit">
+                     <VBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="LOGO">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="157.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#orderListButton" prefHeight="40.0" prefWidth="257.0" style="-fx-background-color: ffecec;" text="Order List">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="943.0" top="-75.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="Price:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="1000.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="cbPrice" prefWidth="150.0" style="-fx-background-color: FFECEC;">
+                     <VBox.margin>
+                        <Insets left="877.0" top="50.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <ChoiceBox fx:id="cbType" prefWidth="150.0" style="-fx-background-color: FFECEC;">
+                     <VBox.margin>
+                        <Insets left="1045.0" top="-27.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
