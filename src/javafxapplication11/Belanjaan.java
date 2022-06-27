@@ -43,4 +43,10 @@ public class Belanjaan {
         public void setHarga(int harga){
             this.harga.set(harga);
         }
+
+    @Override
+    public String toString() {
+        return "Belanjaan{" + "nama=" + nama + ", jumlah=" + jumlah + ", type=" + type + ", harga=" + harga + '}';
+    }
+        
 }
