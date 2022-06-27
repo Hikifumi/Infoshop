@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 /**
@@ -29,7 +30,10 @@ public class FXMLMembershipQuestController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
+    
+    @FXML
+    private Button noButton;
     
     @FXML
     private void YesButtonAction(ActionEvent event) throws IOException {
@@ -45,14 +49,23 @@ public class FXMLMembershipQuestController implements Initializable {
     
     @FXML
     private void NoButtonAction(ActionEvent event) throws IOException {
-        Parent scene2 = FXMLLoader.load(getClass().getResource("FXMLMainShop.fxml"));
-        Scene scene = new Scene(scene2);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLMainShop.fxml"));
+        Parent scene2 = loader.load();
+//        Parent scene2 = FXMLLoader.load(getClass().getResource("FXMLMainShop.fxml"));
+//        Scene scene = new Scene(scene2);
+
+        FXMLMainShopController mainshopcontroller = loader.getController();
+        mainshopcontroller.getData(getData2());
         
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
+        stage.setScene(new Scene(scene2));
         stage.setTitle("Main Shop");
         stage.show();
         System.out.println("No Button is clicked");
+    }
+
+    private String getData2() {
+        return "Guest";
     }
     
 }

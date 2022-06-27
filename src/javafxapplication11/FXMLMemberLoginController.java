@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -26,6 +27,10 @@ public class FXMLMemberLoginController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    
+    @FXML
+    private TextField tfAccount;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -45,11 +50,14 @@ public class FXMLMemberLoginController implements Initializable {
     
     @FXML
     private void LoginButtonAction(ActionEvent event) throws IOException {
-        Parent scene2 = FXMLLoader.load(getClass().getResource("FXMLMainShop.fxml"));
-        Scene scene = new Scene(scene2);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLMainShop.fxml"));
+        Parent scene2 = loader.load();
+        
+        FXMLMainShopController mainshopcontroller = loader.getController();
+        mainshopcontroller.getData(tfAccount.getText());
         
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
+        stage.setScene(new Scene(scene2));
         stage.setTitle("Main Shop");
         stage.show();
         System.out.println("Login Button is clicked");

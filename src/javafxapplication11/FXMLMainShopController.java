@@ -15,6 +15,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -30,12 +31,23 @@ public class FXMLMainShopController implements Initializable {
     @FXML
     private BorderPane mainPane;
     
+    @FXML
+    private Label lMember;
         
     @FXML
     private ChoiceBox cbPrice;
     
     @FXML
     private ChoiceBox cbType;
+    
+    public void getData(String d){
+        lMember.setText(d);
+        System.out.println("getData method is invoked");
+    }
+    
+    private String getData2() {
+        return "Guest";
+    }
     
     @FXML
     private void orderListButton(ActionEvent event) {

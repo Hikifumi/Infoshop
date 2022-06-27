@@ -11,7 +11,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: FFBBBB;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication11.FXMLMainShopController">
    <children>
-      <BorderPane fx:id="mainPane" prefHeight="720.0" prefWidth="1280.0">
+      <BorderPane fx:id="mainPane" layoutX="-4.0" layoutY="17.0" prefHeight="720.0" prefWidth="1280.0">
          <top>
             <VBox prefHeight="175.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
                <children>
@@ -20,12 +20,19 @@
                         <Insets left="5.0" top="5.0" />
                      </VBox.margin>
                   </Button>
-                  <Label text="LOGO">
+                  <Label fx:id="lMember">
                      <font>
-                        <Font size="36.0" />
+                        <Font size="24.0" />
                      </font>
+                     <graphic>
+                        <Label text="Welcome,">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </graphic>
                      <VBox.margin>
-                        <Insets left="157.0" top="20.0" />
+                        <Insets left="100.0" top="20.0" />
                      </VBox.margin>
                   </Label>
                   <Button mnemonicParsing="false" onAction="#orderListButton" prefHeight="40.0" prefWidth="257.0" style="-fx-background-color: ffecec;" text="Order List">
@@ -41,12 +48,20 @@
                         <Font size="18.0" />
                      </font>
                      <VBox.margin>
-                        <Insets left="1000.0" />
+                        <Insets left="875.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Type:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="1045.0" top="-30.0" />
                      </VBox.margin>
                   </Label>
                   <ChoiceBox fx:id="cbPrice" prefWidth="150.0" style="-fx-background-color: FFECEC;">
                      <VBox.margin>
-                        <Insets left="877.0" top="50.0" />
+                        <Insets left="877.0" />
                      </VBox.margin>
                   </ChoiceBox>
                   <ChoiceBox fx:id="cbType" prefWidth="150.0" style="-fx-background-color: FFECEC;">
@@ -54,9 +69,39 @@
                         <Insets left="1045.0" top="-27.0" />
                      </VBox.margin>
                   </ChoiceBox>
+                  <Button mnemonicParsing="false" prefHeight="13.0" prefWidth="56.0" style="-fx-background-color: ffecec;" text="Set">
+                     <VBox.margin>
+                        <Insets left="1210.0" top="-40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
                </children>
             </VBox>
          </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Press set to see our product">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="500.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Choose price and type to sort the product">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="420.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
       </BorderPane>
    </children>
 </AnchorPane>
