@@ -69,7 +69,7 @@
                         <Insets left="1045.0" top="-27.0" />
                      </VBox.margin>
                   </ChoiceBox>
-                  <Button mnemonicParsing="false" prefHeight="13.0" prefWidth="56.0" style="-fx-background-color: ffecec;" text="Set">
+                  <Button fx:id="setButton" mnemonicParsing="false" onAction="#setButton" prefHeight="13.0" prefWidth="56.0" style="-fx-background-color: ffecec;" text="Set">
                      <VBox.margin>
                         <Insets left="1210.0" top="-40.0" />
                      </VBox.margin>

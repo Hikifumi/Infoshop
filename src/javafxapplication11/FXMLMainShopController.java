@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
@@ -40,6 +41,9 @@ public class FXMLMainShopController implements Initializable {
     @FXML
     private ChoiceBox cbType;
     
+    @FXML
+    private Button setButton;
+    
     public void getData(String d){
         lMember.setText(d);
         System.out.println("getData method is invoked");
@@ -53,6 +57,17 @@ public class FXMLMainShopController implements Initializable {
     private void orderListButton(ActionEvent event) {
         Pane page = openScene.getPane("FXMLMainShopOrderList");
         mainPane.setCenter(page);
+    }
+    
+    @FXML
+    private void setButton(ActionEvent event) {
+        if(cbPrice.equals("Normal") && cbType.equals("Type2")){
+            Pane page = openScene.getPane("FXMLMainShopNormal2");
+            mainPane.setCenter(page);
+        }else{
+            Pane page = openScene.getPane("FXMLMainShopNormal2");
+            mainPane.setCenter(page);
+        }
     }
     
     @Override
