@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="1280.0" style="-fx-background-color: ffcece;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="javafxapplication11.FXMLMainShopNormal2Controller">
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="1280.0" style="-fx-background-color: ffcece;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication11.FXMLMainShopNormal2Controller">
    <children>
       <Label layoutX="541.0" layoutY="485.0" prefHeight="27.0" prefWidth="194.0" text="Product is added to cart">
          <font>
@@ -40,7 +39,7 @@
             <Image url="@image/Logo%20Infoshop.jpeg" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="419.0" layoutY="309.0" text="Nama Produk 1">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="419.0" layoutY="309.0" text="Nama Produk 2">
          <font>
             <Font size="18.0" />
          </font>
@@ -60,7 +59,7 @@
             <Image url="@image/Logo%20Infoshop.jpeg" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="707.0" layoutY="309.0" text="Nama Produk 1">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="707.0" layoutY="309.0" text="Nama Produk 3">
          <font>
             <Font size="18.0" />
          </font>
@@ -80,7 +79,7 @@
             <Image url="@image/Logo%20Infoshop.jpeg" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1006.0" layoutY="313.0" text="Nama Produk 1">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1006.0" layoutY="313.0" text="Nama Produk 4">
          <font>
             <Font size="18.0" />
          </font>
